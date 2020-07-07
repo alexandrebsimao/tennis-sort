@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  match: one
+  team: one
+  sets: MyString
+  winner: 1
+
+two:
+  match: two
+  team: two
+  sets: MyString
+  winner: 1

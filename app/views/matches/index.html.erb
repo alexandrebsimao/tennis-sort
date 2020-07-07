@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Matches</h1>
+
+<table class="table table-striped table-sm">
+  <thead>
+    <tr>
+      <th>Datetime</th>
+      <th>Duration</th>
+      <th>Locale</th>
+      <th>Observation</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @matches.each do |match| %>
+      <tr>
+        <td><%= match.datetime %></td>
+        <td><%= match.duration %></td>
+        <td><%= match.locale %></td>
+        <td><%= match.observation %></td>
+        <td><%= link_to 'Show', match %></td>
+        <td><%= link_to 'Edit', edit_match_path(match) %></td>
+        <td><%= link_to 'Destroy', match, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Match', new_match_path, class: 'btn btn-outline-dark' %>

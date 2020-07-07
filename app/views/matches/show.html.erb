@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Datetime:</strong>
+  <%= @match.datetime %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @match.duration %>
+</p>
+
+<p>
+  <strong>Locale:</strong>
+  <%= @match.locale %>
+</p>
+
+<p>
+  <strong>Observation:</strong>
+  <%= @match.observation %>
+</p>
+
+<%= link_to 'Edit', edit_match_path(@match) %> |
+<%= link_to 'Back', matches_path %>
